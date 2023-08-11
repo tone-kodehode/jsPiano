@@ -64,7 +64,7 @@ body {
     box-shadow: -1px -1px 2px rgba(255,255,255,0.2) inset, 0 -2px 2px 3px rgba(0,0,0,0.6) inset, 0 1px 2px rgba(0,0,0,0.5);
 }
 
-/* spaceing black-key by freeCodeCamp with Ania Kubow (YouTube) */
+/* black-key spacing inspired by by freeCodeCamp with Ania Kubow (YouTube) */
 .black-key:nth-child(1) {
     left: 78px;
 }
