@@ -34,15 +34,15 @@ const soundList = [
 
 
 // soundList array and soundFolder as parameters
-function createPiano( soundList, soundFolder ) { 
+function createPiano(soundList, soundFolder) { 
   // creates a piano container element
-  const pianoContainer = document.createElement( "div" );
+  const pianoContainer = document.createElement("div");
   
-  soundList.forEach(( soundInfo ) => {
+  soundList.forEach((soundInfo) => {
     // iterates through the soundList to create key buttons
-    const keyButton = document.createElement( "button" );
+    const keyButton = document.createElement("button");
     
-    const pianoContainer = document.getElementById( "piano" );
+    const pianoContainer = document.getElementById("piano");
     
     // add class to style in css stylesheet
     if (soundInfo.blackKey) {
@@ -51,29 +51,29 @@ function createPiano( soundList, soundFolder ) {
       keyButton.classList.add("white-key");
     }
    
-    const sound = new Audio( soundFolder + soundInfo.fileName );
+    const sound = new Audio(soundFolder + soundInfo.fileName);
     
     // Play sound on button click
-    keyButton.addEventListener( "click", () => playSound( sound ));
+    keyButton.addEventListener("click", () => playSound(sound));
     
     // Play sound on keydown 
-    document.addEventListener( "keydown", ( event ) => {
-      if ( event.key === soundInfo.key ) {
+    document.addEventListener("keydown", (event) => {
+      if (event.key === soundInfo.key) {
         playSound( sound );
       }
     });
     
-    pianoContainer.appendChild( keyButton );
+    pianoContainer.appendChild(keyButton);
   });
   
-  document.body.appendChild( pianoContainer );
+  document.body.appendChild(pianoContainer);
 }
 
-function playSound( sound ) {
+function playSound(sound) {
   // reset the sound playback time and play the sound
   sound.currentTime = 0;
   sound.play();
 }
 
-createPiano( soundList, soundFolder );
+createPiano(soundList, soundFolder);
 
