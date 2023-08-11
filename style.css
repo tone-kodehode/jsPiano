@@ -28,13 +28,13 @@ body {
     width: 68px;
     height: 288px;
     border-radius: 0 0 5px 5px;
-    border: solid black 2px;
-    
+    border: solid black 2px;   
 }
 
 
 .black-key {
     box-sizing: border-box;
+
     position: absolute; /* position key on top */
     width: 38px;
     height: 168px;
@@ -81,3 +81,65 @@ body {
 .black-key:nth-child(10) {
     left: 865px;
 }
+
+@media screen and (max-width: 768px) {
+    #piano {
+        padding: 45px 15px 0.5px 15px;
+        position: relative;
+        display: flex;
+    }
+
+    .white-key {
+        box-sizing: border-box;
+        width: 34px;
+        height: 144px;   
+    }
+
+    .black-key {
+        width: 19px;
+        height: 84px; 
+    }
+
+    .black-key:nth-child(1) {
+        left: 24px;
+    }
+    
+    .black-key:nth-child(2) {
+        left: 58.5px;
+    }
+    
+    .black-key:nth-child(3) {
+        left: 126.5px;
+    }
+    
+    .black-key:nth-child(4) {
+        left: 160px;
+    }
+    
+    .black-key:nth-child(5) {
+        left: 194.5px;
+    }
+    
+    .black-key:nth-child(6) {
+        left: 264px;
+    }
+    
+    .black-key:nth-child(7) {
+        left: 297px;
+    }
+    
+    .black-key:nth-child(8) {
+        left: 331px;
+    }
+    
+    .black-key:nth-child(9) {
+        left: 398.5px;
+    }
+    
+    .black-key:nth-child(10) {
+        left: 432.5px;
+    } 
+
+    
+}
+
