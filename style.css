@@ -12,14 +12,15 @@ body {
 
 #piano {
     padding: 90px 30px 1px 30px;
-    background-color: gray;
+    background-color: #4c4c4c;
     border-radius: 10px;
     position: relative;
     
     display: flex;
     flex-wrap: nowrap;
-    justify-content: center;
-   
+    justify-content: center; 
+
+    border: 1px solid #5d5d5d;
 }
 
 
@@ -65,43 +66,43 @@ body {
 
 /* spaceing black-key by freeCodeCamp with Ania Kubow (YouTube) */
 .black-key:nth-child(1) {
-    left: 48px;
+    left: 78px;
 }
 
 .black-key:nth-child(2) {
-    left: 117px;
+    left: 147px;
 }
 
 .black-key:nth-child(3) {
-    left: 253px;
+    left: 283px;
 }
 
 .black-key:nth-child(4) {
-    left: 320px;
+    left: 350px;
 }
 
 .black-key:nth-child(5) {
-    left: 389px;
+    left: 419px;
 }
 
 .black-key:nth-child(6) {
-    left: 528px;
+    left: 553px;
 }
 
 .black-key:nth-child(7) {
-    left: 594px;
+    left: 624px;
 }
 
 .black-key:nth-child(8) {
-    left: 662px;
+    left: 692px;
 }
 
 .black-key:nth-child(9) {
-    left: 797px;
+    left: 827px;
 }
 
 .black-key:nth-child(10) {
-    left: 865px;
+    left: 895px;
 }
 
 @media screen and (max-width: 768px) {

@@ -29,6 +29,7 @@ const soundList = [
   { key: "v", fileName: "key20.mp3", whiteKey: true, },
   { key: "b", fileName: "key21.mp3", whiteKey: true, },
   { key: "n", fileName: "key22.mp3", whiteKey: true, },
+  { key: "m", fileName: "key23.mp3", whiteKey: true, },
 ];
 
 
