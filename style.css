@@ -14,7 +14,12 @@ body {
     padding: 90px 30px 1px 30px;
     background-color: gray;
     border-radius: 10px;
-    position: relative; 
+    position: relative;
+    
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: center;
+    align-items: flex-end;
 }
 
 
