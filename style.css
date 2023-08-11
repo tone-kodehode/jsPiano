@@ -11,30 +11,27 @@ body {
 }
 
 #piano {
-    padding: 90px 30px 1px 30px;
-    background-color: #4c4c4c;
+    padding: 90px 30px 1px 30px; 
+    background: linear-gradient(45deg, #222222 0%, #555555 100%);
     border-radius: 10px;
+    border: 0.5px solid #5d5d5d;
     position: relative;
-    
     display: flex;
     flex-wrap: nowrap;
     justify-content: center; 
-
-    border: 1px solid #5d5d5d;
 }
 
 
 .white-key {
     box-sizing: border-box;
+    border: none;
     width: 68px;
     height: 288px;
-    /* border-radius: 0 0 5px 5px; */
-    /* border: solid black 1px;  */
     border-left:1px solid #bbbbbb;
     border-bottom: 1px solid #bbbbbb;
+    background: linear-gradient(to bottom, #eeeeee 0%, #ffffff 100%);
     border-radius: 0 0 5px 5px;
     box-shadow: -1px 0 0 rgba(255,255,255,0.8) inset, 0 0 5px #cccccc inset, 0 0 3px rgba(0,0,0,0.2);
-
     cursor: pointer; 
     z-index: 1;
 }
@@ -43,14 +40,16 @@ body {
     border-left: 1px solid #999999;
     border-bottom: 1px solid #999999;
     box-shadow: 2px 0 3px rgba(0,0,0,0.1) inset, -5px 5px 20px rgba(0,0,0,0.2) inset, 0 0 3px rgba(0,0,0,0.2);
+    border: none;
 }
 
 .black-key {
     box-sizing: border-box;
+    border: none;
     position: absolute; /* position key on top */
     width: 38px;
     height: 168px;
-    background-color: black;
+    background: linear-gradient(45deg, #222222 0%, #555555 100%);
     cursor: pointer;
 
     border: 1px solid #000000;
@@ -62,6 +61,7 @@ body {
 
 .black-key:active {
     box-shadow: -1px -1px 2px rgba(255,255,255,0.2) inset, 0 -2px 2px 3px rgba(0,0,0,0.6) inset, 0 1px 2px rgba(0,0,0,0.5);
+    background: linear-gradient(to right, #444444 0%, #222222 100%)
 }
 
 /* black-key spacing inspired by by freeCodeCamp with Ania Kubow (YouTube) */
@@ -124,43 +124,43 @@ body {
     }
 
     .black-key:nth-child(1) {
-        left: 24px;
+        left: 39px;
     }
     
     .black-key:nth-child(2) {
-        left: 58.5px;
+        left: 73.5px;
     }
     
     .black-key:nth-child(3) {
-        left: 126.5px;
+        left: 141.5px;
     }
     
     .black-key:nth-child(4) {
-        left: 160px;
+        left: 175px;
     }
     
     .black-key:nth-child(5) {
-        left: 194.5px;
+        left: 209.5px;
     }
     
     .black-key:nth-child(6) {
-        left: 264px;
+        left: 276.5px;
     }
     
     .black-key:nth-child(7) {
-        left: 297px;
+        left: 312px;
     }
     
     .black-key:nth-child(8) {
-        left: 331px;
+        left: 346px;
     }
     
     .black-key:nth-child(9) {
-        left: 398.5px;
+        left: 413.5px;
     }
     
     .black-key:nth-child(10) {
-        left: 432.5px;
+        left: 448px;
     }   
 }
 
