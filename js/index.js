@@ -76,3 +76,4 @@ function playSound( sound ) {
 }
 
 createPiano( soundList, soundFolder );
+

@@ -105,6 +105,8 @@ body {
     left: 895px;
 }
 
+
+
 @media screen and (max-width: 768px) {
     #piano {
         padding: 45px 15px 0.5px 15px;
